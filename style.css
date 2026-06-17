@@ -1,0 +1,55 @@
+/* I styled the body because font family and font size can be inherited by most text on the page. */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+/* I selected header and footer together because I want them to have the same background colour. */
+header,
+footer {
+    background-color: #f4d6d6;
+    padding: 20px;
+}
+
+/* I used a class selector because only the main site title needs this text colour. */
+.site-title {
+    color: #5c2a72;
+}
+
+/* I used an id selector because this image is unique on my page. */
+#my-image {
+    box-shadow: 0 0 1px 2px black;
+    width: 250px;
+}
+
+/* I changed the hobby list bullets to squares to match the assignment requirement. */
+.hobby-list {
+    list-style-type: square;
+}
+
+/* I removed bullets from only the navigation list so it looks like a website menu. */
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* I made the navigation items display beside each other to make the menu easier to read. */
+nav li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* I removed the underline and added a background and border so the links look like buttons. */
+nav a {
+    text-decoration: none;
+    background-color: #ffffff;
+    border: 1px solid #333333;
+    padding: 8px 12px;
+    color: #333333;
+}
+
+/* I added a hover and active state so users can see when they interact with the links. */
+nav a:hover,
+nav a:active {
+    background-color: #dddddd;
+}

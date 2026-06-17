@@ -4,38 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Assignment 1</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-    <!-- I used the header to introduce the website. The h1 is the main heading because it shows the most important title on the page. -->
-    <h1>Eunji Jo</h1>
-</header>
+  <header>
+        <!-- I added a class to my h1 so I can style only the main site title in CSS. -->
+        <h1 class="site-title">Eunji Jo</h1>
 
-<main>
-    <!-- I used the main tag because this is the main content area of my webpage. -->
-    <article>
-        <!-- I used an article because the About Me section can stand on its own as one complete piece of content. -->
-        <h2>About Me</h2>
+        <!-- I added navigation links so visitors can move to different sections of my page. -->
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#quote">Quote</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <p>
-            My name is Eunji Jo, and I am currently studying <em>Interactive Media Design</em>. I am interested in learning how websites are built and how design can make digital experiences easier and more enjoyable for users. I am still developing my coding skills, but I want to keep practicing and become more confident with <abbr title="HyperText Markup Language">HTML</abbr>, CSS, and other web design tools.
-        </p>
+    <main>
+        <article id="about">
+            <!-- I used an article because this About Me section is the main content of the page. -->
+            <h2>About Me</h2>
 
-        <p>
-            Outside of school, I enjoy creative activities and learning new things that can help me grow as a designer. Sometimes coding feels challenging, but I know that small steps can lead to improvement over time. This is my 1<sup>st</sup> HTML assignment, and I see it as an important step toward becoming more comfortable with web development.
-        </p>
+            <!-- I added an id to this image because it is the only main image on my page. -->
+            <img id="my-image" src="images/my-photo.jpg" alt="A photo of Eunji Jo">
 
-        <!-- I used a blockquote for the quote because it separates the quote from my own writing. The cite tag gives credit to the person who said it. -->
-        <blockquote>
-            <p>"The future depends on what you do today."</p>
-            <cite>- Mahatma Gandhi</cite>
-        </blockquote>
-    </article>
-</main>
+            <p>
+                My name is Eunji Jo, and I am currently studying <em>Interactive Media Design</em>. I am interested in learning how websites are built and how design can make digital experiences easier and more enjoyable for users. I am still developing my coding skills, but I want to keep practicing and become more confident with <abbr title="HyperText Markup Language">HTML</abbr>, CSS, and other web design tools.
+            </p>
 
-<footer>
-    <!-- I used the footer for copyright information because footers usually contain information about the page or site owner. -->
-    <p>&copy; 2026 Eunji Jo</p>
-</footer>
+            <p>
+                Outside of school, I enjoy creative activities and learning new things that can help me grow as a designer. Sometimes coding feels challenging, but I know that small steps can lead to improvement over time. This is my 1<sup>st</sup> HTML styling assignment, and I see it as an important step toward becoming more comfortable with web development and creating better websites in the future.
+            </p>
+        </article>
+
+        <section id="hobbies">
+            <!-- I used a list because hobbies are short related items that fit well in bullet form. -->
+            <h2>My Hobbies</h2>
+            <ul class="hobby-list">
+                <li>Design</li>
+                <li>Photography</li>
+                <li>Drawing illustrations</li>
+                <li>Watching movies</li>
+                <li>Playing games</li>
+            </ul>
+        </section>
+
+        <section id="quote">
+            <!-- I used blockquote for the quote because it separates the quote from my own writing. -->
+            <h2>Motivational Quote</h2>
+            <blockquote>
+                <p>"The future depends on what you do today."</p>
+                <cite>- Mahatma Gandhi</cite>
+            </blockquote>
+        </section>
+    </main>
+
+    <footer>
+        <!-- I used the footer for copyright information because it belongs at the bottom of the page. -->
+        <p>&copy; 2026 Eunji Jo</p>
+    </footer>
 </body>
 </html>
